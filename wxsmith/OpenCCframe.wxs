@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="OpenCCFrame">
+		<title>Open Control Center</title>
+		<icon>/home/mtx/workspace/wxWidgets/OpenCC/Images/icon.png</icon>
+		<size>567,344</size>
+		<id_arg>0</id_arg>
+		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+			<object class="sizeritem">
+				<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+					<size>561,344</size>
+					<object class="wxBoxSizer" variable="BoxSizer2" member="no">
+						<orient>wxVERTICAL</orient>
+						<object class="sizeritem">
+							<object class="wxStaticBitmap" name="ID_STATICBITMAP1" variable="StaticBitmap1" member="yes">
+								<bitmap>/home/mtx/workspace/wxWidgets/OpenCC/Images/header.jpg</bitmap>
+							</object>
+							<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxBoxSizer" variable="BoxSizer3" member="no">
+								<object class="sizeritem">
+									<object class="wxFlexGridSizer" variable="FlexGridSizer1" member="no">
+										<cols>5</cols>
+										<rows>3</rows>
+										<growablecols>0,1,2,3,4</growablecols>
+										<growablerows>1</growablerows>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="idStaticTextThreshold" variable="StaticTextThreshold" member="yes">
+												<label>Threshold</label>
+												<style>wxALIGN_CENTRE</style>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="idStaticPower" variable="StaticTextPower" member="yes">
+												<label>Power</label>
+												<style>wxALIGN_CENTRE</style>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="idStaticTextSlopeThreshold" variable="StaticTextSlopeThreshold" member="yes">
+												<label>Slope&#x0A;Threshold</label>
+												<style>wxALIGN_CENTRE</style>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="idStaticTextSLope" variable="StaticTextSlope" member="yes">
+												<label>Slope</label>
+												<style>wxALIGN_CENTRE</style>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="idStaticTextRamp" variable="StaticTextRamp" member="yes">
+												<label>Ramp</label>
+												<style>wxALIGN_CENTRE</style>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxSlider" name="idSliderThreshold" variable="SliderThreshold" member="yes">
+												<max>4095</max>
+												<tooltip>Set activation point</tooltip>
+												<help>Set activation point</help>
+												<style>wxSL_VERTICAL|wxSL_INVERSE</style>
+												<handler function="OnSliderThresholdCmdScrollThumbTrack" entry="EVT_COMMAND_SCROLL_THUMBTRACK" />
+											</object>
+											<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxSlider" name="idSliderPower" variable="SliderPower" member="yes">
+												<max>1228</max>
+												<tooltip>Set max power to increment</tooltip>
+												<help>Set max power to increment</help>
+												<style>wxSL_VERTICAL|wxSL_INVERSE</style>
+												<handler function="OnSliderPowerCmdScrollThumbTrack" entry="EVT_COMMAND_SCROLL_THUMBTRACK" />
+											</object>
+											<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxSlider" name="idSLiderSlopeThreshold" variable="SliderSlopeThreshold" member="yes">
+												<max>4095</max>
+												<tooltip>Set power reduction start point</tooltip>
+												<help>Set power reduction start point</help>
+												<style>wxSL_VERTICAL|wxSL_INVERSE</style>
+												<handler function="OnSliderSlopeThresholdCmdScrollThumbTrack" entry="EVT_COMMAND_SCROLL_THUMBTRACK" />
+											</object>
+											<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxSlider" name="idSLiderSlope" variable="SliderSlope" member="yes">
+												<max>1024</max>
+												<tooltip>Set max power reduction percentage</tooltip>
+												<help>Set max power reduction percentage</help>
+												<style>wxSL_VERTICAL|wxSL_INVERSE</style>
+												<handler function="OnSliderSlopeCmdScrollThumbTrack" entry="EVT_COMMAND_SCROLL_THUMBTRACK" />
+											</object>
+											<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxSlider" name="idSliderRamp" variable="SliderRamp" member="yes">
+												<max>2048</max>
+												<tooltip>Set power increase speed</tooltip>
+												<help>Set power increase speed</help>
+												<style>wxSL_VERTICAL|wxSL_INVERSE</style>
+												<handler function="OnSliderRampCmdScrollThumbTrack" entry="EVT_COMMAND_SCROLL_THUMBTRACK" />
+											</object>
+											<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="idStaticTextThresholdVolt" variable="StaticTextThresholdVolt" member="yes">
+												<label>0V</label>
+												<style>wxALIGN_CENTRE</style>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="idStaticTextPowerPerc" variable="StaticTextPowerPerc" member="yes">
+												<label>0%</label>
+												<style>wxALIGN_CENTRE</style>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="idStaticTextSlopeThresholdVolt" variable="StaticTextSlopeThresholdVolt" member="yes">
+												<label>0V</label>
+												<style>wxALIGN_CENTRE</style>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="idStaticTextSlopePerc" variable="StaticTextSlopePerc" member="yes">
+												<label>0%</label>
+												<style>wxALIGN_CENTRE</style>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="idStaticTextRampVolt" variable="StaticTextRampVolt" member="yes">
+												<label>0V</label>
+												<style>wxALIGN_CENTRE</style>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+									</object>
+									<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticBoxSizer" variable="StaticBoxSizer1" member="no">
+										<label>Monitor</label>
+										<object class="sizeritem">
+											<object class="wxFlexGridSizer" variable="FlexGridSizer2" member="no">
+												<cols>1</cols>
+												<rows>4</rows>
+												<growablecols>0</growablecols>
+												<object class="sizeritem">
+													<object class="wxGauge" name="idGaugeRailIn" variable="GaugeRailIn" member="yes">
+														<range>4095</range>
+														<size>295,28</size>
+														<style>wxGA_SMOOTH</style>
+													</object>
+													<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxStaticText" name="idStaticTextRailIn" variable="StaticTextRailIn" member="yes">
+														<label>Rail In: 0V</label>
+														<style>wxALIGN_CENTRE</style>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxGauge" name="idGaugeRailOut" variable="GaugeRailOut" member="yes">
+														<range>4095</range>
+														<style>wxGA_SMOOTH</style>
+													</object>
+													<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxStaticText" name="idStaticTextRailOut" variable="StaticTextRailOut" member="yes">
+														<label>Rail Out: 0V</label>
+														<style>wxALIGN_CENTRE</style>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<option>1</option>
+										</object>
+									</object>
+									<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+							</object>
+							<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<option>1</option>
+			</object>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar" member="no">
+			<object class="wxMenu" variable="MenuFile" member="no">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="idMenuItemOpen" variable="MenuItemOpen" member="yes">
+					<label>Open</label>
+					<help>Load map from file</help>
+					<handler function="OnMenuItemOpenSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="idMenuItemSave" variable="MenuItemSave" member="yes">
+					<label>Save</label>
+					<help>Save map to file</help>
+					<handler function="OnMenuItemSaveSelected" entry="EVT_MENU" />
+				</object>
+				<object class="separator" />
+				<object class="wxMenuItem" name="idMenuItemConnect" variable="MenuItemConnect" member="no">
+					<label>Connect</label>
+					<help>Connect to tuning box</help>
+					<handler function="OnMenuItemConnectSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="idMenuItemDisconnect" variable="MenuItemDisconnect" member="yes">
+					<label>Disconnect</label>
+					<help>Disconnect tuning box</help>
+					<handler function="OnMenuItemDisconnectSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="idMenuItemTransmit" variable="MenuItemTransmit" member="yes">
+					<label>Transmit</label>
+					<help>Transmit map to tuning box</help>
+					<handler function="OnMenuItemTransmitSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="idMenuItemReceive" variable="MenuItemReceive" member="yes">
+					<label>Receive</label>
+					<help>Receive map from tuning box</help>
+					<handler function="OnMenuItemReceiveSelected" entry="EVT_MENU" />
+				</object>
+				<object class="separator" />
+				<object class="wxMenuItem" name="idMenuItemExit" variable="MenuItemExit" member="no">
+					<label>Exit</label>
+					<accel>Alt-F4</accel>
+					<help>Quit the application</help>
+					<handler function="OnMenuItemExitSelected" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="MenuMaps" member="yes">
+				<label>&amp;Maps</label>
+				<object class="wxMenuItem" name="idMenuItemNormalMap" variable="MenuItemNormalMap" member="yes">
+					<label>Normal (Map 1)</label>
+					<help>Select Normal (Map 1)</help>
+					<handler function="OnMenuItemNormalMapSelected" entry="EVT_MENU" />
+					<radio>1</radio>
+				</object>
+				<object class="wxMenuItem" name="idMenuItemFAPMap" variable="MenuItemFAPMap" member="yes">
+					<label>FAP (Map 2)</label>
+					<help>Select FAP (Map 2)</help>
+					<handler function="OnMenuItemFAPMapSelected" entry="EVT_MENU" />
+					<radio>1</radio>
+				</object>
+			</object>
+			<object class="wxMenu" variable="MenuOptions" member="yes">
+				<label>&amp;Options</label>
+				<object class="wxMenuItem" name="idMenuItemEnMonitor" variable="MenuItemMonitor" member="yes">
+					<label>Enable Monitor</label>
+					<help>Enable/Disable rail monitor</help>
+					<handler function="OnMenuItemMonitorSelected" entry="EVT_MENU" />
+					<check>1</check>
+				</object>
+				<object class="wxMenuItem" name="idMenuItemEnTrimmer" variable="MenuItemEnTrimmer" member="yes">
+					<label>Enable Trimmer</label>
+					<help>Enable/Disable tuning box trimmer</help>
+					<handler function="OnMenuItemEnTrimmerSelected" entry="EVT_MENU" />
+					<check>1</check>
+				</object>
+				<object class="wxMenuItem" name="idMenuItemEnBox" variable="MenuItemEnBox" member="yes">
+					<label>Enable Tuning Box</label>
+					<help>Enable/Disable tuning box</help>
+					<handler function="OnMenuItemEnBoxSelected" entry="EVT_MENU" />
+					<check>1</check>
+				</object>
+				<object class="wxMenuItem" name="idMenuItemReset" variable="MenuItemReset" member="yes">
+					<label>Reset Tuning Box</label>
+					<help>Reset tuning box to defaults</help>
+					<handler function="OnMenuItemResetSelected" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="MenuInfo" member="no">
+				<label>&amp;Information</label>
+				<object class="wxMenuItem" name="idMenuItemAbout" variable="MenuItemAbout" member="no">
+					<label>About...</label>
+					<accel>F1</accel>
+					<help>Show info about this application</help>
+					<handler function="OnMenuItemAboutSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="idMenuItemRelease" variable="MenuItemRelease" member="yes">
+					<label>Release History</label>
+					<help>Show release information</help>
+					<enabled>0</enabled>
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="idStatusBar" variable="StatusBar" member="yes">
+			<fields>5</fields>
+			<widths>250,100,100,-10,110</widths>
+			<styles>wxSB_NORMAL,wxSB_NORMAL,wxSB_NORMAL,wxSB_NORMAL,wxSB_NORMAL</styles>
+		</object>
+		<object class="wxToolBar" name="idToolBar" variable="ToolBar" member="yes">
+			<object class="tool" name="idToolBarItemReceive" variable="ToolBarItemReceive" member="yes">
+				<label>Receive</label>
+				<bitmap>/home/mtx/workspace/wxWidgets/OpenCC/Images/receive.png</bitmap>
+				<longhelp>Receive map from tuning box</longhelp>
+				<handler function="OnToolBarItemReceiveClicked" entry="EVT_TOOL" />
+			</object>
+			<object class="tool" name="idToolBarItemTransmit" variable="ToolBarItemTransmit" member="yes">
+				<label>Transmit</label>
+				<bitmap>/home/mtx/workspace/wxWidgets/OpenCC/Images/transmit.png</bitmap>
+				<longhelp>Transmit map to tuning box</longhelp>
+				<handler function="OnToolBarItemTransmitClicked" entry="EVT_TOOL" />
+			</object>
+			<object class="tool" name="idToolBarItemLoad" variable="ToolBarItemLoad" member="yes">
+				<label>Load</label>
+				<bitmap>/home/mtx/workspace/wxWidgets/OpenCC/Images/load.png</bitmap>
+				<longhelp>Load map from file</longhelp>
+				<handler function="OnToolBarItemLoadClicked" entry="EVT_TOOL" />
+			</object>
+			<object class="tool" name="idToolBarItemSave" variable="ToolBarItemSave" member="yes">
+				<label>Save</label>
+				<bitmap>/home/mtx/workspace/wxWidgets/OpenCC/Images/save.png</bitmap>
+				<longhelp>Save map to file</longhelp>
+				<handler function="OnToolBarItemSaveClicked" entry="EVT_TOOL" />
+			</object>
+			<object class="tool" name="idToolBarItemNormalMap" variable="ToolBarItemNormalMap" member="yes">
+				<label>Normal Map</label>
+				<bitmap>/home/mtx/workspace/wxWidgets/OpenCC/Images/map1.png</bitmap>
+				<longhelp>Select Normal (Map 1)</longhelp>
+				<handler function="OnToolBarItemNormalMapClicked" entry="EVT_TOOL" />
+			</object>
+			<object class="tool" name="idToolBarItemFAPMap" variable="ToolBarItemFAPMap" member="yes">
+				<label>FAP Map</label>
+				<bitmap>/home/mtx/workspace/wxWidgets/OpenCC/Images/map2.png</bitmap>
+				<longhelp>Select FAP (Map 2)</longhelp>
+				<handler function="OnToolBarItemFAPMapClicked" entry="EVT_TOOL" />
+			</object>
+			<object class="tool" name="idToolBarAbout" variable="ToolBarAbout" member="yes">
+				<label>About</label>
+				<bitmap>/home/mtx/workspace/wxWidgets/OpenCC/Images/about.png</bitmap>
+				<longhelp>About...</longhelp>
+				<handler function="OnToolBarAboutClicked" entry="EVT_TOOL" />
+			</object>
+		</object>
+		<object class="wxTimer" name="idTimerMonitor" variable="TimerMonitor" member="yes">
+			<interval>1000</interval>
+			<handler function="OnTimerMonitorTrigger" entry="EVT_TIMER" />
+		</object>
+	</object>
+</wxsmith>

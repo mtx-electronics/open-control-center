@@ -1,0 +1,28 @@
+//******************************************************************************
+// Release Staus Report
+//******************************************************************************
+
+Compatible tuning boxes
+-----------------------
+
+- CR200 FW v1.0.0-064
+
+Known Bugs:
+-----------
+
+To Do's:
+--------
+
+- Add support for CR110
+- Add support for CR120
+- Add support for CR200
+	
+Notes:
+------
+
+History:
+--------
+
+0.1.0 [Alfa]
+
+- First official release
